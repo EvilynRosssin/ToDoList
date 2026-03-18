@@ -6,10 +6,10 @@
  */
 
 define('DB_HOST',     getenv('DB_HOST')     ?: 'localhost');
-define('DB_PORT',     (int)(getenv('DB_PORT')     ?: 3306));
+define('DB_PORT',     getenv('DB_PORT') !== false ? (int) getenv('DB_PORT') : 3306);
 define('DB_NAME',     getenv('DB_NAME')     ?: 'todolist');
 define('DB_USER',     getenv('DB_USER')     ?: 'root');
-define('DB_PASSWORD', getenv('DB_PASSWORD') ?: '');
+define('DB_PASSWORD', getenv('DB_PASSWORD') !== false ? getenv('DB_PASSWORD') : '');
 define('DB_CHARSET',  'utf8mb4');
 
 /**

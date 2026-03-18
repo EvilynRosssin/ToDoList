@@ -15,6 +15,7 @@ function mostrarTarefas(tarefas) {
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
 
         novaLi += `
             <li class="task ${tarefa.completed ? 'done' : ''}" data-id="${tarefa.id}" data-completed="${tarefa.completed}">
