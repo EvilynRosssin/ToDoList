@@ -180,3 +180,4 @@ curl -X DELETE http://localhost:8080/api/tasks.php?id=1
 6. Clique no ícone 🗑 para remover uma tarefa.
 
 Todas as operações são salvas no banco de dados MySQL e a interface é atualizada dinamicamente via AJAX, sem recarregar a página.
+# TodoList-
